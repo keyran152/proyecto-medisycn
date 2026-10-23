@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica MediSync - Portal de Salud & Telemetría</title>
-    
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
     <!-- Íconos FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -500,6 +501,11 @@
     </style>
 </head>
 <body>
+    <!-- Pegas la casilla justo aquí abajo -->
+    <div class="cf-turnstile" data-sitekey="TU_SITE_KEY_AQUI"></div>
+
+    <!-- Todo el resto del contenido de tu página sigue aquí -->
+
 
     <!-- Header Principal -->
     <header class="top-header">
@@ -1054,7 +1060,17 @@
             toast.innerText = msg;
             toast.style.display = 'block';
             setTimeout(function() { toast.style.display = 'none'; }, 3000);
-        }
+
+
+
+
+
+
+
+
+
+
+  }
     </script>
 </body>
 </html>
